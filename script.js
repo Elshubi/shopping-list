@@ -16,7 +16,6 @@ function addnew() {
     par.appendChild(para);
     newText.value = '';
     newText.focus();
-    console.log(typeof(node))
 };
 
     btn.addEventListener("click", addnew);
@@ -29,9 +28,18 @@ function addnew() {
 
   // Delete items that are done
 
+  var remove = document.getElementById('remove');
+  var highlght = document.getElementById('highlight');
+  var strike = document.getElementById('strike');
+ 
+
   par.addEventListener("click",function(e) {
-  if (e.target && e.target.matches("p")) {
+  if (e.target && e.target.matches("p") && remove.checked) {
     e.target.innerHTML='';
-	}
+	} else if 
+    (e.target && e.target.matches("p") && highlight.checked) {
+      e.target.style.backgroundColor= 'red';
+  }
+  
   });
 
