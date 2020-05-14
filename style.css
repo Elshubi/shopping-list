@@ -4,26 +4,29 @@
 }
 
 .headcontainer{
-        background-image: url('./img/Background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 7em;
         width: 50%;
         margin: 1em;
         margin-top: 0px;
+        margin-bottom: 0px;
         text-align: center;
-        color: sandybrown;
+        color: rgb(233, 200, 54);
         position: relative;
         left: 25%;
+        top: -93px;
+        z-index: 2;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2em;
+}
+h1{
+    text-shadow: 2px 2px sandybrown;
 }
 
 h4{
 
     position: relative;
     left: -12%;
-    top: 40%;
+    top: 0%;
     margin: 0px;
     padding: 0px;
     margin-top: 1em;
@@ -33,23 +36,35 @@ h4{
 }
 
 body{
-    background-color:black
+    background-color:#333
 }
 
+.optionbar{
+
+    background-color: slategray;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    text-shadow: 2px 2px black;
+}
 .topbar{
     width:100%;
     background-color: slategray;
     color: white;
+    text-shadow: 2px 2px black;
     margin: 0%;
     padding: 0%;
     text-align: right;
-    font-size: 2em;
+    font-size: 1.5em;
+    position: relative;
+    top: -19px;
 }
 
 
-
 p{
-    background-color: aqua;
+    background-color: rgb(119, 226, 226);
     width: 120%;;
     margin: 3px;
     position: relative;
@@ -58,9 +73,10 @@ p{
 }
 
 p:hover {
-    background-color: red;
+    background-color: rgb(255, 32, 51);
 }
 
 .extratext{
     font-size: 0.5em;
+    font-style: italic;
 }
